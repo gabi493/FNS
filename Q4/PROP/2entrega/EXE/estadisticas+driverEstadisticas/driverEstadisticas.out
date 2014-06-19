@@ -1,0 +1,47 @@
+Driver estadisticas.Elige una opicion:
+	 1) estadisticas()
+	 2) estadisticas(int mida)()
+	 3) insertarEstadistica (int i, int j, double similitud)
+	 4) consultarEstadistica (int i, int j)
+	 0) Salir
+Opcion 1 seleccionada.
+1
+Elige una opicion:
+	 1) estadisticas()
+	 2) estadisticas(int mida)()
+	 3) insertarEstadistica (int i, int j, double similitud)
+	 4) consultarEstadistica (int i, int j)
+	 0) Salir
+Opcion 2 seleccionada.
+Elige una opicion:
+	 1) estadisticas()
+	 2) estadisticas(int mida)()
+	 3) insertarEstadistica (int i, int j, double similitud)
+	 4) consultarEstadistica (int i, int j)
+	 0) Salir
+Opcion 3 seleccionada.
+Se han añadido las nuevas estadisticas en la matriz.
+0.0  0.0  0.0  0.0  
+0.0  0.0  0.0  45.0  
+0.0  0.0  0.0  0.0  
+0.0  45.0  0.0  0.0  
+Elige una opicion:
+	 1) estadisticas()
+	 2) estadisticas(int mida)()
+	 3) insertarEstadistica (int i, int j, double similitud)
+	 4) consultarEstadistica (int i, int j)
+	 0) Salir
+Opcion 4 seleccionada.
+La afinidad entre estas dos letras es 45.0
+0.0  0.0  0.0  0.0  
+0.0  0.0  0.0  45.0  
+0.0  0.0  0.0  0.0  
+0.0  45.0  0.0  0.0  
+Elige una opicion:
+	 1) estadisticas()
+	 2) estadisticas(int mida)()
+	 3) insertarEstadistica (int i, int j, double similitud)
+	 4) consultarEstadistica (int i, int j)
+	 0) Salir
+Opcion 0 seleccionada.
+Fin del driver

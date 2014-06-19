@@ -1,0 +1,67 @@
+Driver afinidad.Elige una opicion:
+	 1) afinidad(int mida)
+	 2) insertarAfinidad(int i,int j,double afinidad)
+	 3) consultarAfinidad(int i,int j)
+	 4) escribirMatriz()
+	 0) Salir
+Opcion 1 seleccionada.
+Elige una opicion:
+	 1) afinidad(int mida)
+	 2) insertarAfinidad(int i,int j,double afinidad)
+	 3) consultarAfinidad(int i,int j)
+	 4) escribirMatriz()
+	 0) Salir
+Opcion 4 seleccionada.
+0.0  0.0  0.0  0.0  
+0.0  0.0  0.0  0.0  
+0.0  0.0  0.0  0.0  
+0.0  0.0  0.0  0.0  
+Elige una opicion:
+	 1) afinidad(int mida)
+	 2) insertarAfinidad(int i,int j,double afinidad)
+	 3) consultarAfinidad(int i,int j)
+	 4) escribirMatriz()
+	 0) Salir
+Opcion 2 seleccionada.
+Elige una opicion:
+	 1) afinidad(int mida)
+	 2) insertarAfinidad(int i,int j,double afinidad)
+	 3) consultarAfinidad(int i,int j)
+	 4) escribirMatriz()
+	 0) Salir
+Opcion 4 seleccionada.
+0.0  0.0  0.0  0.0  
+0.0  0.0  13.0  0.0  
+0.0  13.0  0.0  0.0  
+0.0  0.0  0.0  0.0  
+Elige una opicion:
+	 1) afinidad(int mida)
+	 2) insertarAfinidad(int i,int j,double afinidad)
+	 3) consultarAfinidad(int i,int j)
+	 4) escribirMatriz()
+	 0) Salir
+Opcion 3 seleccionada.
+L'afinitat és de 13.0
+0.0  0.0  0.0  0.0  
+0.0  0.0  13.0  0.0  
+0.0  13.0  0.0  0.0  
+0.0  0.0  0.0  0.0  
+Elige una opicion:
+	 1) afinidad(int mida)
+	 2) insertarAfinidad(int i,int j,double afinidad)
+	 3) consultarAfinidad(int i,int j)
+	 4) escribirMatriz()
+	 0) Salir
+Opcion 4 seleccionada.
+0.0  0.0  0.0  0.0  
+0.0  0.0  13.0  0.0  
+0.0  13.0  0.0  0.0  
+0.0  0.0  0.0  0.0  
+Elige una opicion:
+	 1) afinidad(int mida)
+	 2) insertarAfinidad(int i,int j,double afinidad)
+	 3) consultarAfinidad(int i,int j)
+	 4) escribirMatriz()
+	 0) Salir
+Opcion 0 seleccionada.
+Fin del driver

@@ -1,0 +1,3 @@
+Esta carpeta contiene los textos a los que el programa accede.
+
+	1.-	Teo.txt

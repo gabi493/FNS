@@ -1,0 +1,69 @@
+Driveralfabeto.Elige una opicion:
+	 1) alfabeto()
+	 2) alfabeto(String idioma, int n)
+	 3) alfabeto(alfabeto original)
+	 4) addSimbolo (simbolo newsimbolo)
+	 5) escribirAlfabeto()
+	 0) Salir
+Opcion 1 seleccionada.
+Elige una opicion:
+	 1) alfabeto()
+	 2) alfabeto(String idioma, int n)
+	 3) alfabeto(alfabeto original)
+	 4) addSimbolo (simbolo newsimbolo)
+	 5) escribirAlfabeto()
+	 0) Salir
+Opcion 2 seleccionada.
+7
+Elige una opicion:
+	 1) alfabeto()
+	 2) alfabeto(String idioma, int n)
+	 3) alfabeto(alfabeto original)
+	 4) addSimbolo (simbolo newsimbolo)
+	 5) escribirAlfabeto()
+	 0) Salir
+Opcion 5 seleccionada.
+a 
+b 
+c 
+e 
+Index: 4, Size: 4
+Elige una opicion:
+	 1) alfabeto()
+	 2) alfabeto(String idioma, int n)
+	 3) alfabeto(alfabeto original)
+	 4) addSimbolo (simbolo newsimbolo)
+	 5) escribirAlfabeto()
+	 0) Salir
+Opcion 3 seleccionada.
+1
+Elige una opicion:
+	 1) alfabeto()
+	 2) alfabeto(String idioma, int n)
+	 3) alfabeto(alfabeto original)
+	 4) addSimbolo (simbolo newsimbolo)
+	 5) escribirAlfabeto()
+	 0) Salir
+Opcion 4 seleccionada.
+Elige una opicion:
+	 1) alfabeto()
+	 2) alfabeto(String idioma, int n)
+	 3) alfabeto(alfabeto original)
+	 4) addSimbolo (simbolo newsimbolo)
+	 5) escribirAlfabeto()
+	 0) Salir
+Opcion 5 seleccionada.
+a 
+b 
+c 
+e 
+f 
+Index: 5, Size: 5
+Elige una opicion:
+	 1) alfabeto()
+	 2) alfabeto(String idioma, int n)
+	 3) alfabeto(alfabeto original)
+	 4) addSimbolo (simbolo newsimbolo)
+	 5) escribirAlfabeto()
+	 0) Salir
+Opcion 0 seleccionada.

@@ -1,0 +1,5 @@
+Esta carpeta contiene todos los archivos comunes del cluster:
+	1.- diagrama de clases comunes
+	2.- especificacion clases compartidas
+	3.- normas de programacion
+	4.- reparto responsabilidades

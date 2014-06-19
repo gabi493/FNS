@@ -1,0 +1,82 @@
+DriverTeclado
+Opcion 1 seleccionada.
+Escoger forma del teclado: 
+	 1) rectangular
+	 2) hexagonal
+	 0) SALIR
+formaTeclado = hexagonal
+Introducir numero de filas del teclado: 
+	 0) SALIR
+formaTeclado = hexagonal, numeroFilas = 4
+Introducir numero de columnas del teclado: 
+	 0) SALIR
+formaTeclado = hexagonal, numeroFilas = 4, numeroColumnas = 4
+Introducir numero de posiciones del teclado: 
+	 0) SALIR
+formaTeclado = hexagonal, numeroFilas = 4, numeroColumnas = 4, numeroPosiciones = 16
+Escoger numero de lados del teclado: 
+	 4) 4 lados
+	 6) 6 lados
+	 0) SALIR
+formaTeclado = hexagonal, numeroFilas = 4, numeroColumnas = 4, numeroPosiciones = 16, teclasDe4Lados? = false
+
+Opcion 3 seleccionada.
+Forma = hexagonal
+
+Opcion 5 seleccionada.
+Numero Filas = 4
+
+Opcion 7 seleccionada.
+Numero Columnas = 4
+
+Opcion 9 seleccionada.
+Tiene teclas de 4 lados? = false
+
+Opcion 11 seleccionada.
+Numero de Posiciones = 16
+
+Opcion 2 seleccionada.
+Escoger forma del teclado: 
+	 1) rectangular
+	 2) hexagonal
+	 0) SALIR
+formaTeclado = rectangular
+
+Opcion 3 seleccionada.
+Forma = rectangular
+
+Opcion 4 seleccionada.
+Introducir numero de filas del teclado: 
+	 0) SALIR
+numeroFilas = 2
+
+Opcion 5 seleccionada.
+Numero Filas = 2
+
+Opcion 6 seleccionada.
+Introducir numero de columnas del teclado: 
+	 0) SALIR
+numeroColumnas = 3
+
+Opcion 7 seleccionada.
+Numero Columnas = 3
+
+Opcion 8 seleccionada.
+Escoger numero de lados del teclado: 
+	 4) 4 lados
+	 6) 6 lados
+	 0) SALIR
+teclasDe4Lados? = true
+
+Opcion 9 seleccionada.
+Tiene teclas de 4 lados? = true
+
+Opcion 10 seleccionada.
+Introducir numero de posiciones del teclado: 
+	 0) SALIR
+numeroPosiciones = 6
+
+Opcion 11 seleccionada.
+Numero de Posiciones = 6
+
+Opcion 0 seleccionada.

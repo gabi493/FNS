@@ -1,0 +1,86 @@
+DriverDistancia
+Opcion 1 seleccionada.
+
+Opcion 2 seleccionada.
+
+Opcion 4 seleccionada.
+Forma del teclado = hexagonal
+
+Opcion 6 seleccionada.
+Numero de filas = 4
+
+Opcion 8 seleccionada.
+Numero de columnas = 8
+
+Opcion 10 seleccionada.
+Numero de posiciones = 30
+
+Opcion 3 seleccionada.
+
+Opcion 4 seleccionada.
+Forma del teclado = rectangular
+
+Opcion 5 seleccionada.
+
+Opcion 6 seleccionada.
+Numero de filas = 2
+
+Opcion 7 seleccionada.
+
+Opcion 8 seleccionada.
+Numero de columnas = 3
+
+Opcion 9 seleccionada.
+
+Opcion 10 seleccionada.
+Numero de posiciones = 6
+
+Opcion 11 seleccionada.
+
+Opcion 11 seleccionada.
+
+Opcion 12 seleccionada.
+Primera posicion fila[0] = 1
+
+Opcion 12 seleccionada.
+Primera posicion fila[1] = 4
+
+Opcion 13 seleccionada.
+
+Opcion 14 seleccionada.
+Primeras posiciones = [
+0, 3]
+
+Opcion 17 seleccionada.
+
+Opcion 18 seleccionada.
+Distancias matriz: 
+5 1 2 1 1 2 
+1 5 1 1 1 1 
+2 1 5 2 1 1 
+1 1 2 5 1 2 
+1 1 1 1 5 1 
+2 1 1 2 1 5 
+
+Opcion 15 seleccionada.
+
+Opcion 15 seleccionada.
+
+Opcion 15 seleccionada.
+
+Opcion 15 seleccionada.
+
+Opcion 15 seleccionada.
+
+Opcion 15 seleccionada.
+
+Opcion 18 seleccionada.
+Distancias matriz: 
+0 1 2 1 1 2 
+1 0 1 1 1 1 
+2 1 0 2 1 1 
+1 1 2 0 1 2 
+1 1 1 1 0 1 
+2 1 1 2 1 0 
+
+Opcion 0 seleccionada.

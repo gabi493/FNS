@@ -1,0 +1,8 @@
+Esta carpeta contiene:
+	1.- carpeta común del cluster
+	2.- enunciado ampliado
+	3.- diagrama estatico de clases
+	4.- esbozo de las pantallas del programa "giTeclado"
+	5.- reparto del trabajo entre los miembros del grupo
+	6.- descripción de los algoritmos
+

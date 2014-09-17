@@ -13,3 +13,38 @@ Encuesta:
 	- Investigación
 2.- ¿Por qué he escogido SI?
 
+-----------------------------------------------------------------------------
+17-09-2014
+
+Temario apuntes:	Direcció-i-Gestió-dels-SI-a-les-Organitzacions-Pàgs-9-a-30-JAPastor.pdf
+
+Leer -> Informe Chaos
+
+Sistemas de Información:
+Nosotros vemos la empresa desde los Sistemas de Información y hacemos cambios que afectan a personas y a tareas. 
+Hay que ser conscientes de ello, puesto que los proyectos informáticos suelen ser como "golpes" a la organización, y éstos han de ser suaves.
+De no ser así se pueden romper las relaciones entre "tareas - estructura - SI - sistemas de recompensa - personal"
+
+
+Esquema evolutivo de los SI (Nolan):
+¿Cómo entra la informática en una empresa? Se le consulta a alguien sobre modificaciones/mejoras en la empresa en un área de la misma.
+Al principio, normalmente por miedo, la informática no es aceptada en otras áreas.
+Con el tiempo las diferentes áreas ven los beneficios de ese área y piden la informática.
+Si la dirección general está de acuerdo, la informática se empieza a "contagiar" entre departamentos.
+Los informáticos eran especialistas en otro área (no a las que los envían ahora), por lo que muchas veces los proyectos acaban en FAIL.
+En éste momento alguien de arriba frena el presupuesto informático y cambia la tendencia de la curva.
+Entonces las empresas acaban llegando a la madurez, en la que queda más o menos controlado.
+
+Al principio de la informática la gente estaba muy preocupada por la tecnología (tangible).
+Con el tiempo lo que ha ido ganando el interés por el recurso de información (intangible).
+
+Serie (IT Crowd)
+Antes, estrategas e informáticos no se relacionaban -> cada uno iba a su bola.
+Se pasó a que los estrategas empezaron a influenciar a los sistemas de la Información.
+Ahora, desde la tecnología de Información también se influencia a las empresas.
+
+
+
+
+
+

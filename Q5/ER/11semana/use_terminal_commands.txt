@@ -1,0 +1,53 @@
+A) Els departaments són dirigits per empleats. Un empleat pot dirigir un o cap departament. Un departament és dirigit per un empleat.
+
+B) Un invariant que exigeixi que el director d'un departament és un dels empleats que treballa (WorksOn) en el departament.
+
+C) Un invariant que exigeixi que el sou del director d'un departament és més gran que el sou dels altres treballadors del departament.
+
+4. Defineix una instanciació que satisfà tots els invariants. Executa USE, comprova i mostra que efectivament es satisfan.
+
+5. Defineix una instanciació que satisfà els invariants definits en l'exemple, però NO l'invariant definit en 3.B.
+
+6. Defineix una instanciació que satisfà els invariants definits en l'exemple, però NO l'invariant definit en 3.C.
+
+
+
+
+
+
+
+association Dirige between
+   Employee[1] role empleadoDirigente
+   Department[0..1] role deptDirigido
+end
+
+
+context Department
+      -- el director d'un departament és un dels empleats
+      -- que treballa (WorksOn) en el departament.
+     inv DirectorTrabajaEnDept:
+      self.employee->includes(self.directorDept)
+
+     -- el sou del director d'un departament
+     -- és més gran que el sou dels altres treballadors del departament.
+   inv SueldoDirectorSuperiorDelDept:
+     self.employee -> forAll(e1|e1.name <> self.directorDept.name implies e1.salary < self.directorDept.salary)
+   
+
+
+
+
+
+
+
+1. !new Employee('Gabriel')
+2. !new Employee('Carrillo')
+3. !new Employee('Lopez')
+4. !new Employee('Carlos')
+5. !new Project('CostaBreve')
+6. !new Project('Universidad')
+7. !new Department('RRPP')
+8. !new Department('PersonalSala')
+9. !new Department('Estudiantes')
+10. !@CostaBreve.budget := 78980974
+11. !@Universidad.budget := 47908987

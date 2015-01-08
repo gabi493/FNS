@@ -6,196 +6,197 @@ model Company
 
 class MateriaPrimera
 attributes
-  nom : Character
-  descripcio : Character
+  nom : String
+  descripcio : String
 end
 
 class Aigua < MateriaPrimera
 attributes
-  origen : Character
+  origen : String
   qualitat : Integer
-  tipus : Character
+  tipus : String
 end
 
 class Llupol < MateriaPrimera
 attributes
-  varietat : Character
-  propietats : Character
+  varietat : String
+  propietats : String
 end
 
 class Malta < MateriaPrimera
 attributes
-  cereal : Character
-  color : Character
-  mida molta : Integer
+  cereal : String
+  color : String
+  midaMolta : Integer
 end
 
 class Llevat < MateriaPrimera
 attributes
-  tipus : Character
-  preparacio : Character
+  tipus : String
+  preparacio : String
   qualitat : Integer
 end
 
 class Sucre < MateriaPrimera
 attributes
-  tipus : Character
+  tipus : String
 end
 
 class Lot
 attributes
-  proveïdor : Character [0..1]
-  numero : Character
-  data adquisicio : Character
+  proveidor : String  -- [0..1]
+  numero : String
+  dataAdquisicio : String
   quantitat : Integer
 end
 
 class Cervesa
 attributes
-  varietat : Character
+  varietat : String
 end
 
 abstract class Estat
 attributes
 end
 
-class En Maceracio < Estat
+class EnMaceracio < Estat
 attributes
-  volum : Double
-  hora ini : Integer
-  hora fi : Integer
-  temp ini : Float
-  temp fi : Float
+  volum : Real
+  horaIni : Integer
+  horaFi : Integer
+  tempIni : Real
+  tempFi : Real
 end
 
-class En Coccio < Estat
+class EnCoccio < Estat
 attributes
-  volum : Double
-  hora ini : Integer
-  hora fi : Integer
-  densitat ini : Float
-  densitat fi : Float
-  temp ini : Float
-  temp fi : Float
+  volum : Real
+  horaIni : Integer
+  horaFi : Integer
+  densitatIni : Real
+  densitatFi : Real
+  tempIni : Real
+  tempFi : Real
 end
 
-class En Fermentacio < Estat
+class EnFermentacio < Estat
 attributes
-  volum : Double
-  hora ini : Integer
-  hora fi : Integer
-  densitat ini : Float
-  densitat fi : Float
-  temp ini : Float
-  temp fi : Float
-  posits : Float
+  volum : Real
+  horaIni : Integer
+  horaFi : Integer
+  densitatIni : Real
+  densitatFi : Real
+  tempIni : Real
+  tempFi : Real
+  posits : Real
 end
 
-class En Maduracio < Estat
+class EnMaduracio < Estat
 attributes
-  barril/ampolla : Character
-  volum unitat : Integer
+  barril_ampolla : String
+  volumUnitat : Integer
   unitats : Integer
-  temp : Float
+  temp : Real
 end
 
 class Finalitzat < Estat
 attributes
-  volum : Double
-  alcohol : Float
-  amargor : Double
-  data ini : Integer
+  volum : Real
+  alcohol : Real
+  amargor : Real
+  dataIni : Integer
 end
 
 class Mesures
 attributes
   hora : Integer
-  persona : Character
-  volum : Double [0..1]
-  temp : Float [0..1]
-  densitat : Float [0..1]
+  persona : String
+  volum : Real  -- [0..1]
+  temp : Real -- [0..1]
+  densitat : Real -- [0..1]
 end
 
 -- associations
 
-association between
-  En Maceracio[1]
+association te1 between
+  EnMaceracio[1]
   Mesures[*]
 end
 
-association between
-  En Coccio[1]
+association te2 between
+  EnCoccio[1]
   Mesures[*]
 end
 
-association between
-  En Fermentacio[1]
+
+association te3 between
+  EnFermentacio[1]
   Mesures[*]
 end
 
-association between
-  En Maduracio[1]
+association te4 between
+  EnMaduracio[1]
   Mesures[*]
 end
 
-association between
+association esta between
   Cervesa[1]
   Estat[*]
 end
 
-association APartirDe between
-  MateriaPrimera[*]
-  Cervesa[*]
-attributes
-  quantitat : Integer
+associationclass APartirDe between
+    MateriaPrimera[*] role materia
+    Cervesa[*] role producte
+  attributes
+    quantitat : Integer
 end
 
-association between
-  MateriaPrimera[o..1]
+association pertanyA between
+  MateriaPrimera[0..1]
   Lot[1]
 end
 
-association between
-  Estat[o..1]
+association de1 between
+  Estat[0..1]
   Lot[1]
 end
 
-association between
-  Lot[1]
-  Finaltzat[*]
+association esta2 between
+  Lot[1] role producte
+  Finalitzat[*] role esta
 end
 
 -- OCL constraints
 
 constraints
 
-context Department 
+-- context Department 
     -- the number of employees working in a department must
     -- be greater or equal to the number of projects 
     -- controlled by the department
-  inv MoreEmployeesThanProjects:
-    self.employee->size >= self.project->size 
+  -- inv MoreEmployeesThanProjects:
+    -- self.employee->size >= self.project->size 
 
     -- el director d'un departament és un dels empleats 
     -- que treballa (WorksOn) en el departament.
-  inv DirectorTrabajaEnDept:
-    self.employee->includes(self.directorDept)
+  -- inv DirectorTrabajaEnDept:
+    -- self.employee->includes(self.directorDept)
 
 
      -- el sou del director d'un departament 
     -- és més gran que el sou dels altres treballadors del departament.
-  inv SueldoDirectorSuperiorDelDept:
-    self.employee -> forAll(e1|e1.name <> self.directorDept.name implies e1.salary < self.directorDept.salary)
+  -- inv SueldoDirectorSuperiorDelDept:
+    -- self.employee -> forAll(e1|e1.name <> self.directorDept.name implies e1.salary < self.directorDept.salary)
 
 
 
-context Employee 
+-- context Employee 
     -- employees get a higher salary when they work on
     -- more projects
-  inv MoreProjectsHigherSalary:
-    Employee.allInstances->forAll(e1, e2 | 
-      e1.project->size > e2.project->size 
-        implies e1.salary > e2.salary)
+  -- inv MoreProjectsHigherSalary:
+    -- Employee.allInstances->forAll(e1, e2 | 
+      -- e1.project->size > e2.project->size 
+        -- implies e1.salary > e2.salary)
 
 
 
@@ -203,16 +204,16 @@ context Employee
 
  
 
-context Project
+-- context Project
     -- the budget of a project must not exceed the 
     -- budget of the controlling department
-  inv BudgetWithinDepartmentBudget:
-    self.budget <= self.department.budget
+  -- inv BudgetWithinDepartmentBudget:
+    -- self.budget <= self.department.budget
 
     -- employees working on a project must also work in the
     -- controlling department
-  inv EmployeesInControllingDepartment:
-    self.department.employee->includesAll(self.employee)
+  -- inv EmployeesInControllingDepartment:
+    -- self.department.employee->includesAll(self.employee)
 
 
 

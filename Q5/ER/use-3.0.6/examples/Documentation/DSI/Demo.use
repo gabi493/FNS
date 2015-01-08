@@ -1,0 +1,223 @@
+-- $ProjectHeader: use 0.393 Wed, 16 May 2007 14:10:28 +0200 opti $
+
+model Company
+
+-- classes
+
+class MateriaPrimera
+attributes
+  nom : Character
+  descripcio : Character
+end
+
+class Aigua < MateriaPrimera
+attributes
+  origen : Character
+  qualitat : Integer
+  tipus : Character
+end
+
+class Llupol < MateriaPrimera
+attributes
+  varietat : Character
+  propietats : Character
+end
+
+class Malta < MateriaPrimera
+attributes
+  cereal : Character
+  color : Character
+  mida molta : Integer
+end
+
+class Llevat < MateriaPrimera
+attributes
+  tipus : Character
+  preparacio : Character
+  qualitat : Integer
+end
+
+class Sucre < MateriaPrimera
+attributes
+  tipus : Character
+end
+
+class Lot
+attributes
+  proveïdor : Character [0..1]
+  numero : Character
+  data adquisicio : Character
+  quantitat : Integer
+end
+
+class Cervesa
+attributes
+  varietat : Character
+end
+
+abstract class Estat
+attributes
+end
+
+class En Maceracio < Estat
+attributes
+  volum : Double
+  hora ini : Integer
+  hora fi : Integer
+  temp ini : Float
+  temp fi : Float
+end
+
+class En Coccio < Estat
+attributes
+  volum : Double
+  hora ini : Integer
+  hora fi : Integer
+  densitat ini : Float
+  densitat fi : Float
+  temp ini : Float
+  temp fi : Float
+end
+
+class En Fermentacio < Estat
+attributes
+  volum : Double
+  hora ini : Integer
+  hora fi : Integer
+  densitat ini : Float
+  densitat fi : Float
+  temp ini : Float
+  temp fi : Float
+  posits : Float
+end
+
+class En Maduracio < Estat
+attributes
+  barril/ampolla : Character
+  volum unitat : Integer
+  unitats : Integer
+  temp : Float
+end
+
+class Finalitzat < Estat
+attributes
+  volum : Double
+  alcohol : Float
+  amargor : Double
+  data ini : Integer
+end
+
+class Mesures
+attributes
+  hora : Integer
+  persona : Character
+  volum : Double [0..1]
+  temp : Float [0..1]
+  densitat : Float [0..1]
+end
+
+-- associations
+
+association between
+  En Maceracio[1]
+  Mesures[*]
+end
+
+association between
+  En Coccio[1]
+  Mesures[*]
+end
+
+association between
+  En Fermentacio[1]
+  Mesures[*]
+end
+
+association between
+  En Maduracio[1]
+  Mesures[*]
+end
+
+association between
+  Cervesa[1]
+  Estat[*]
+end
+
+association APartirDe between
+  MateriaPrimera[*]
+  Cervesa[*]
+attributes
+  quantitat : Integer
+end
+
+association between
+  MateriaPrimera[o..1]
+  Lot[1]
+end
+
+association between
+  Estat[o..1]
+  Lot[1]
+end
+
+association between
+  Lot[1]
+  Finaltzat[*]
+end
+
+-- OCL constraints
+
+constraints
+
+context Department 
+    -- the number of employees working in a department must
+    -- be greater or equal to the number of projects 
+    -- controlled by the department
+  inv MoreEmployeesThanProjects:
+    self.employee->size >= self.project->size 
+
+    -- el director d'un departament és un dels empleats 
+    -- que treballa (WorksOn) en el departament.
+  inv DirectorTrabajaEnDept:
+    self.employee->includes(self.directorDept)
+
+
+     -- el sou del director d'un departament 
+    -- és més gran que el sou dels altres treballadors del departament.
+  inv SueldoDirectorSuperiorDelDept:
+    self.employee -> forAll(e1|e1.name <> self.directorDept.name implies e1.salary < self.directorDept.salary)
+
+
+
+context Employee 
+    -- employees get a higher salary when they work on
+    -- more projects
+  inv MoreProjectsHigherSalary:
+    Employee.allInstances->forAll(e1, e2 | 
+      e1.project->size > e2.project->size 
+        implies e1.salary > e2.salary)
+
+
+
+
+
+ 
+
+context Project
+    -- the budget of a project must not exceed the 
+    -- budget of the controlling department
+  inv BudgetWithinDepartmentBudget:
+    self.budget <= self.department.budget
+
+    -- employees working on a project must also work in the
+    -- controlling department
+  inv EmployeesInControllingDepartment:
+    self.department.employee->includesAll(self.employee)
+
+
+
+
+
+
+
+

@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram_Layout version="4">
+  <diagramOptions>
+    <autolayout>false</autolayout>
+    <antialiasing>false</antialiasing>
+    <showassocnames>true</showassocnames>
+    <showattributes>true</showattributes>
+    <showmultiplicities>true</showmultiplicities>
+    <showoperations>false</showoperations>
+    <showrolenames>false</showrolenames>
+    <showgrid>false</showgrid>
+  </diagramOptions>
+  <node type="Class">
+    <name>Finalitzat</name>
+    <x_coord>527.0</x_coord>
+    <y_coord>448.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Llupol</name>
+    <x_coord>122.0</x_coord>
+    <y_coord>9.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Mesures</name>
+    <x_coord>263.0</x_coord>
+    <y_coord>654.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>EnCoccio</name>
+    <x_coord>146.0</x_coord>
+    <y_coord>448.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>EnMaduracio</name>
+    <x_coord>378.0</x_coord>
+    <y_coord>447.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>APartirDe</name>
+    <x_coord>201.0</x_coord>
+    <y_coord>226.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>EnMaceracio</name>
+    <x_coord>31.0</x_coord>
+    <y_coord>448.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>MateriaPrimera</name>
+    <x_coord>200.0</x_coord>
+    <y_coord>138.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>EnFermentacio</name>
+    <x_coord>262.0</x_coord>
+    <y_coord>447.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Aigua</name>
+    <x_coord>9.0</x_coord>
+    <y_coord>8.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Malta</name>
+    <x_coord>246.0</x_coord>
+    <y_coord>9.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Lot</name>
+    <x_coord>452.0</x_coord>
+    <y_coord>123.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Cervesa</name>
+    <x_coord>208.0</x_coord>
+    <y_coord>302.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Llevat</name>
+    <x_coord>371.0</x_coord>
+    <y_coord>9.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Estat</name>
+    <x_coord>470.0</x_coord>
+    <y_coord>310.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <node type="Class">
+    <name>Sucre</name>
+    <x_coord>495.0</x_coord>
+    <y_coord>9.0</y_coord>
+    <hidden>false</hidden>
+  </node>
+  <edge type="BinaryEdge">
+    <source>Cervesa</source>
+    <target>Estat</target>
+    <name>_esta</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>_esta</name>
+      <x_coord>366.596923828125</x_coord>
+      <y_coord>303.15380859375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>estat</name>
+      <x_coord>430.91162109375</x_coord>
+      <y_coord>295.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>457.0</x_coord>
+      <y_coord>307.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>cervesa</name>
+      <x_coord>297.0</x_coord>
+      <y_coord>288.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>299.7568359375</x_coord>
+      <y_coord>302.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>295.0</x_coord>
+      <y_coord>316.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>466.0</x_coord>
+      <y_coord>316.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>EnMaduracio</source>
+    <target>Mesures</target>
+    <name>_te4</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>_te4</name>
+      <x_coord>362.90087890625</x_coord>
+      <y_coord>571.69775390625</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>mesures</name>
+      <x_coord>336.0</x_coord>
+      <y_coord>594.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>341.88037109375</x_coord>
+      <y_coord>643.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>enMaduracio</name>
+      <x_coord>336.435546875</x_coord>
+      <y_coord>575.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>417.0</x_coord>
+      <y_coord>526.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>414.0</x_coord>
+      <y_coord>521.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>334.0</x_coord>
+      <y_coord>650.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Lot</source>
+    <target>Finalitzat</target>
+    <name>_esta2</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>_esta2</name>
+      <x_coord>524.15869140625</x_coord>
+      <y_coord>306.4990234375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>esta</name>
+      <x_coord>530.7900390625</x_coord>
+      <y_coord>395.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>567.0</x_coord>
+      <y_coord>433.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>producte</name>
+      <x_coord>522.0</x_coord>
+      <y_coord>251.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>524.7568359375</x_coord>
+      <y_coord>201.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>520.0</x_coord>
+      <y_coord>197.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>562.0</x_coord>
+      <y_coord>444.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>MateriaPrimera</source>
+    <target>Lot</target>
+    <name>_pertanyA</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>_pertanyA</name>
+      <x_coord>348.26708984375</x_coord>
+      <y_coord>143.92919921875</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>lot</name>
+      <x_coord>425.37353515625</x_coord>
+      <y_coord>109.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>438.0</x_coord>
+      <y_coord>145.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>materiaPrimera</name>
+      <x_coord>305.0</x_coord>
+      <y_coord>123.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>0..1</name>
+      <x_coord>306.80078125</x_coord>
+      <y_coord>147.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>303.0</x_coord>
+      <y_coord>158.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>448.0</x_coord>
+      <y_coord>158.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>Estat</source>
+    <target>Lot</target>
+    <name>_de1</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>_de1</name>
+      <x_coord>464.55126953125</x_coord>
+      <y_coord>249.166015625</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>lot</name>
+      <x_coord>483.37353515625</x_coord>
+      <y_coord>251.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>497.0</x_coord>
+      <y_coord>201.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>estat</name>
+      <x_coord>450.91162109375</x_coord>
+      <y_coord>285.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>0..1</name>
+      <x_coord>466.0</x_coord>
+      <y_coord>295.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>486.0</x_coord>
+      <y_coord>306.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>506.0</x_coord>
+      <y_coord>197.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>EnMaceracio</source>
+    <target>Mesures</target>
+    <name>_te1</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>_te1</name>
+      <x_coord>154.55126953125</x_coord>
+      <y_coord>585.4990234375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>mesures</name>
+      <x_coord>205.2939453125</x_coord>
+      <y_coord>607.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>250.0</x_coord>
+      <y_coord>651.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>enMaceracio</name>
+      <x_coord>74.0</x_coord>
+      <y_coord>597.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>93.7568359375</x_coord>
+      <y_coord>540.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>0</name>
+      <x_coord>72.0</x_coord>
+      <y_coord>536.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+      <deltaX>41.0</deltaX>
+      <deltaY>88.0</deltaY>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>259.0</x_coord>
+      <y_coord>663.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>APartirDe</source>
+    <target>Cervesa</target>
+    <name>_APartirDe2</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>_APartirDe2</name>
+      <x_coord>178.65869140625</x_coord>
+      <y_coord>271.9990234375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>cervesa</name>
+      <x_coord>251.0</x_coord>
+      <y_coord>270.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>254.0</x_coord>
+      <y_coord>289.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>aPartirDe</name>
+      <x_coord>191.19287109375</x_coord>
+      <y_coord>291.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>252.7568359375</x_coord>
+      <y_coord>263.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>249.0</x_coord>
+      <y_coord>258.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>249.0</x_coord>
+      <y_coord>298.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>EnCoccio</source>
+    <target>Mesures</target>
+    <name>_te2</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>_te2</name>
+      <x_coord>224.15869140625</x_coord>
+      <y_coord>592.9990234375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>mesures</name>
+      <x_coord>215.2939453125</x_coord>
+      <y_coord>594.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>270.0</x_coord>
+      <y_coord>642.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>enCoccio</name>
+      <x_coord>203.0</x_coord>
+      <y_coord>639.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>214.7568359375</x_coord>
+      <y_coord>567.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>0</name>
+      <x_coord>201.0</x_coord>
+      <y_coord>564.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+      <deltaX>55.0</deltaX>
+      <deltaY>116.0</deltaY>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>269.0</x_coord>
+      <y_coord>650.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>MateriaPrimera</source>
+    <target>APartirDe</target>
+    <name>_APartirDe1</name>
+    <edgeproperty type="associationName" userDefined="true">
+      <name>_APartirDe1</name>
+      <x_coord>168.55126953125</x_coord>
+      <y_coord>197.9990234375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>aPartirDe</name>
+      <x_coord>251.0</x_coord>
+      <y_coord>194.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>252.7568359375</x_coord>
+      <y_coord>212.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>materiaPrimera</name>
+      <x_coord>159.251953125</x_coord>
+      <y_coord>224.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>252.88037109375</x_coord>
+      <y_coord>189.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>249.0</x_coord>
+      <y_coord>184.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>249.0</x_coord>
+      <y_coord>222.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="BinaryEdge">
+    <source>EnFermentacio</source>
+    <target>Mesures</target>
+    <name>_te3</name>
+    <edgeproperty type="associationName" userDefined="false">
+      <name>_te3</name>
+      <x_coord>295.123779296875</x_coord>
+      <y_coord>599.4990234375</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="rolename" userDefined="false">
+      <name>mesures</name>
+      <x_coord>308.0</x_coord>
+      <y_coord>594.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="target" type="multiplicity" userDefined="true">
+      <name>*</name>
+      <x_coord>310.0</x_coord>
+      <y_coord>642.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="rolename" userDefined="false">
+      <name>enFermentacio</name>
+      <x_coord>218.435546875</x_coord>
+      <y_coord>659.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty kind="source" type="multiplicity" userDefined="true">
+      <name>1</name>
+      <x_coord>309.7568359375</x_coord>
+      <y_coord>581.0</y_coord>
+      <hidden>false</hidden>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>306.0</x_coord>
+      <y_coord>577.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>1</name>
+      <x_coord>306.0</x_coord>
+      <y_coord>650.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>2</specialid>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>EnCoccio</source>
+    <target>Estat</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>189.0</x_coord>
+      <y_coord>444.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>189.0</x_coord>
+      <y_coord>390.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>483.0</x_coord>
+      <y_coord>328.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>13.0</deltaX>
+      <deltaY>18.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>Finalitzat</source>
+    <target>Estat</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>0</name>
+      <x_coord>546.0</x_coord>
+      <y_coord>444.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+      <deltaX>19.0</deltaX>
+      <deltaY>-4.0</deltaY>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>546.0</x_coord>
+      <y_coord>379.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>484.0</x_coord>
+      <y_coord>328.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>14.0</deltaX>
+      <deltaY>18.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>Malta</source>
+    <target>MateriaPrimera</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>297.0</x_coord>
+      <y_coord>69.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>297.0</x_coord>
+      <y_coord>106.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>249.0</x_coord>
+      <y_coord>134.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>49.0</deltaX>
+      <deltaY>-4.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>EnMaduracio</source>
+    <target>Estat</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>437.0</x_coord>
+      <y_coord>443.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>437.0</x_coord>
+      <y_coord>386.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>485.0</x_coord>
+      <y_coord>328.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>15.0</deltaX>
+      <deltaY>18.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>Sucre</source>
+    <target>MateriaPrimera</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>529.0</x_coord>
+      <y_coord>41.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>529.0</x_coord>
+      <y_coord>105.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>252.0</x_coord>
+      <y_coord>134.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>52.0</deltaX>
+      <deltaY>-4.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>Aigua</source>
+    <target>MateriaPrimera</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>52.0</x_coord>
+      <y_coord>68.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>52.0</x_coord>
+      <y_coord>105.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>244.0</x_coord>
+      <y_coord>134.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>44.0</deltaX>
+      <deltaY>-4.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>Llevat</source>
+    <target>MateriaPrimera</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>420.0</x_coord>
+      <y_coord>69.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>420.0</x_coord>
+      <y_coord>105.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>251.0</x_coord>
+      <y_coord>134.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>51.0</deltaX>
+      <deltaY>-4.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>EnMaceracio</source>
+    <target>Estat</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>73.0</x_coord>
+      <y_coord>444.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>73.0</x_coord>
+      <y_coord>392.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>483.0</x_coord>
+      <y_coord>328.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>13.0</deltaX>
+      <deltaY>18.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>EnFermentacio</source>
+    <target>Estat</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>305.0</x_coord>
+      <y_coord>443.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>305.0</x_coord>
+      <y_coord>391.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>482.0</x_coord>
+      <y_coord>328.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>12.0</deltaX>
+      <deltaY>18.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+  <edge type="Generalization">
+    <source>Llupol</source>
+    <target>MateriaPrimera</target>
+    <name>Inheritance</name>
+    <edgeproperty type="WayPoint" userDefined="false">
+      <name>0</name>
+      <x_coord>171.0</x_coord>
+      <y_coord>55.0</y_coord>
+      <hidden>false</hidden>
+      <id>0</id>
+      <specialid>1</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>1</name>
+      <x_coord>171.0</x_coord>
+      <y_coord>104.0</y_coord>
+      <hidden>false</hidden>
+      <id>1</id>
+      <specialid>0</specialid>
+    </edgeproperty>
+    <edgeproperty type="WayPoint" userDefined="true">
+      <name>2</name>
+      <x_coord>244.0</x_coord>
+      <y_coord>134.0</y_coord>
+      <hidden>false</hidden>
+      <id>2</id>
+      <specialid>2</specialid>
+      <deltaX>44.0</deltaX>
+      <deltaY>-4.0</deltaY>
+    </edgeproperty>
+    <hidden>false</hidden>
+  </edge>
+</diagram_Layout>
